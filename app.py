@@ -38,13 +38,13 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     msg = event.message.text
-    
+
     r = 'sorry i cant understand'
 
-    if msg == 'sticker':
+    if msg == ['sticker', 'Sticker']:
         sticker_message = StickerSendMessage(
-        package_id='1',
-        sticker_id='1'
+        package_id='23',
+        sticker_id='2'
         )
         line_bot_api.reply_message(
             event.reply_token,
