@@ -41,7 +41,7 @@ def handle_message(event):
 
     r = 'sorry i cant understand'
 
-    if msg == ['sticker', 'Sticker']:
+    if msg in ['sticker', 'Sticker']:
         sticker_message = StickerSendMessage(
         package_id='1',
         sticker_id='1'
