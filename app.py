@@ -40,10 +40,12 @@ def handle_message(event):
     msg = event.message.text
     r = 'sorry i cant understand'
 
-    if msg == 'hi':
+    if msg == ['hi', 'Hi']:
         r = 'hi'
     elif msg == 'Have you had you lunch?':
         r = 'not yet'
+    elif msg == 'Who are you?':
+        r = 'I\'m bot'
     line_bot_api.reply_message(
         event.reply_token,
         TextSendMessage(text=r))
