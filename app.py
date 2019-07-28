@@ -40,9 +40,9 @@ def handle_message(event):
     msg = event.message.text
     r = 'sorry i cant understand'
 
-    if msg == 'hi'
+    if msg == 'hi':
         r = 'hi'
-    elif msg == 'Have you had you lunch?'
+    elif msg == 'Have you had you lunch?':
         r = 'not yet'
     line_bot_api.reply_message(
         event.reply_token,
